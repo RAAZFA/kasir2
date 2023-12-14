@@ -123,7 +123,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="widgets.html" aria-expanded="false">
+                        <a href="/setdiskon" aria-expanded="false">
                             <i class="icon-badge menu-icon"></i><span class="nav-text">setting discount</span>
                         </a>
                     </li>

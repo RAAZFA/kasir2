@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\JenisBarangController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\DiskonController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,3 +37,7 @@ Route::get('/barang', [BarangController::class, 'index']);
 Route::post('/barang/store', [BarangController::class, 'store']);
 Route::post('/barang/update/{id}', [BarangController::class, 'update']);
 Route::get('/barang/destroy/{id}', [BarangController::class, 'destroy']);
+
+// route Setting Diskon
+Route::get('/setdiskon', [DiskonController::class, 'index']);
+Route::post('/setdiskon/update/{id}', [DiskonController::class, 'update']);
