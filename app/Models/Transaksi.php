@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Transaksi extends Model
 {
     use HasFactory;
+    protected $table = 'tbl_transaksi';
+    protected $fillable = [
+        'no_transaksi',
+        'tgl_transaksi',
+        'diskon',
+        'kembalian',
+        'total_bayar',
+    ];
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'updated_at';
 }
